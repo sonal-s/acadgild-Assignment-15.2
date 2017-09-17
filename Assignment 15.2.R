@@ -1,0 +1,6 @@
+library(haven)
+crime_1 <- read_sas("~/Desktop/crime-1.sas7bdat")
+View(crime_1)
+write.table(crime_1,"/Users/sonalsingh/Desktop/crime-1.txt")
+library(openxlsx)
+write.xlsx(crime_1,"/Users/sonalsingh/Desktop/crime-1.xlsx")
